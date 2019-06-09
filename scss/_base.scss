@@ -1,0 +1,407 @@
+//main: main.scss
+
+* {
+  text-align: center;
+}
+
+html, body {
+  font-family: 'Bree Serif', sans-serif;
+  color: white;
+  text-align: center;
+  background-color: black;
+}
+
+@font-face {
+  font-family: Chunk;
+  font-display: auto;
+  src: url(../font/Chunk.otf);
+  font-weight: bold;
+}
+
+.hidden-h1 {
+  height: 0;
+  margin: 0;
+  text-indent: -500%;
+}
+
+header {
+
+  .carousel-indicators {
+    position: unset;
+    margin: 0;
+    display: flex;
+
+    li {
+      text-indent: 0;
+      text-align: center;
+      font-size: 0.8rem;
+      line-height: 16px;
+      font-weight: 100;
+      padding-left: 0.5rem;
+      padding-right: 0.5rem;
+      margin-left: 0.5rem;
+      margin-right: 0.5rem;
+      color:gray;
+      background-color: transparent;
+
+      i {
+        font-size: 1.5rem;
+      }
+    }
+
+    .active {
+      color: white;
+      background-color: transparent;
+    }
+  }
+}
+
+.basecover{
+  height: 100vh;
+  width: 100%;
+  position: fixed;
+  z-index: 2000;
+  background-color: black;
+  animation-duration: 2s;
+  animation-delay: 3s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.cover{
+  height: 60vh;
+  width: 80%;
+  position: fixed;
+  z-index: 10;
+  background-image: url("../img/logocover.png");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.carousel-item {
+  min-height: 110vh;
+  padding-bottom: 48px;
+  .container {
+    min-height: 100vh;
+  }
+}
+
+section {
+  min-height: 100vh;
+  min-width: 100%;
+}
+
+// .carousel-inner .carousel-item {
+//   transition: -webkit-transform .4s ease-in;
+//   transition: transform .4s ease-in;
+//   transition: transform .4s ease-in, -webkit-transform .4s ease-in;
+// }
+
+.home-cover {
+  background-image: url("../img/1.png");
+  background-position: right bottom;
+  background-repeat: no-repeat;
+  background-size: contain;
+  text-align: left;
+
+  .title {
+    padding: 1rem;
+    margin-top: 70px;
+    font-family: Chunk;
+    display: inline-block;    
+    color: black;
+    background-color: white;
+  }
+}
+
+.svg {
+  width: 100%;
+  height: 10vw;
+
+  polygon {
+    fill: black;
+  }
+}
+
+.home-description {
+  background-color: white;
+  color: black;
+  display: flex;
+  align-items: center;
+  margin-top: -10vw;
+  margin-bottom: -10vw;
+
+  .container {
+    min-height: unset;
+  }
+
+  .description-text {
+    font-size: 2rem;
+    text-align: center;
+  }
+
+  .logo {
+    height: 400px;
+    width: 100%;
+    background-image: url("../img/logo.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+}
+
+.home-albums {
+  img {
+    width: 100%;
+    height: auto;
+  }
+  p {
+    font-size: 1.2rem;
+  }
+}
+
+.page-title {
+  margin-top: 1rem;
+  padding: 1rem;
+  display: inline-block;    
+  color: black;
+  font-size: 3rem;
+  background-color: white;
+}
+
+.nav-pills {
+  display: flex;
+  justify-content: center;
+  padding: 1rem;
+
+  .nav-item {
+    padding: 0;
+    margin-left: 1rem;
+    margin-right: 1rem;
+  }
+
+  .nav-link{
+    color: white;
+    text-align: center;
+    border-radius: 0;
+    overflow: visible;
+    padding-left: 0;
+    padding-right: 0;
+    font-size: 0.9rem;
+  }
+  
+  .nav-link.active {
+    color: black;
+  }
+}
+
+.logo {
+  margin: auto;
+  height: 50px;
+  width: 50px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;  
+}
+.spotify {
+  background-image: url("../img/loghi/spotify.png");
+}
+.soundcloud {
+  background-image: url("../img/loghi/soundcloud.png");
+}
+.beatport {
+  background-image: url("../img/loghi/beatport.png");
+}
+.itunes {
+  background-image: url("../img/loghi/itunes.png");
+}
+.deezer {
+  background-image: url("../img/loghi/deezer.png");
+}
+.bandcamp {
+  background-image: url("../img/loghi/bandcamp.png");
+}
+.youtube {
+  background-image: url("../img/loghi/youtube.png");
+}
+
+iframe {
+  background-image: url("../img/loader1.gif");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: auto;
+}
+
+.shop-container {
+  width: 100%;
+  height: 95vh;
+  background-color: white;
+
+  iframe {
+    width: 100%;
+    height: 100%;
+    border: 0;
+    background-image: url("../img/loader2.gif");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: auto; 
+  }
+}
+
+.social {
+  margin-top: 25px;
+  margin-bottom: 50px;
+
+  a {
+    margin-top: 1rem;
+    padding: 0;
+
+    color: white;
+  }
+
+  i {
+    font-size: 2rem;    
+  }
+}
+
+.emails {
+  
+  * {
+    text-align: center;
+  }
+
+  div {
+    margin-top: 25px;
+    margin-bottom: 25px;
+  }
+
+  #etichetta {
+    color: white;
+    text-decoration: none;
+  }
+
+  #email1, #email2, #email3, #cellulare {
+    direction: rtl;
+    unicode-bidi: bidi-override; 
+  }
+}
+
+form {
+  margin-top: 50px;
+  text-align: center;
+
+  * {
+    text-align: center;
+  }
+
+  .form-group label {
+    display: block;
+  }
+
+  #recaptcha {
+    transform:scale(0.7);
+    -webkit-transform:scale(0.7);
+  }
+
+  .btn {
+    background-color: white;
+    color: black;
+  }
+}
+
+
+
+.from-left[data-scroll="in"] {  
+  animation-name: bounceInLeft;
+}
+
+.from-right[data-scroll="in"] {  
+  animation-name: bounceInRight;
+}
+
+.footer {
+  background-color: white;
+  color: black;
+  padding: 20px;
+
+  .footer-content {
+    text-align: center;
+  }
+
+  .dev {
+    font-size: small;
+  }
+
+  .dev-link, .policy a {
+    color: black;
+
+  }
+  
+
+}
+
+
+
+
+
+
+
+@media (min-width: 768px) {
+// desktop
+
+  .carousel-indicators {    
+    justify-content: center;
+  }
+
+  .home-cover{
+
+    .title {
+      margin-left: 20px;
+      font-size: 6vw;
+    }
+
+  }
+
+  // .interstellar {
+  //   background-image: url("../img/interstellar.gif");
+  //   background-color: black;
+  //   background-attachment: fixed;
+  //   background-position: center center;
+  //   background-repeat: no-repeat;
+  //   background-size: cover;
+  // }
+
+}
+@media (max-width: 767px) {
+// mobile
+
+  .carousel-indicators {    
+    justify-content: space-around;
+  }
+
+  .home-cover{
+    text-align: center;
+
+    .title{
+      font-size: 10vw;
+    }
+
+  }
+
+  .home-description {
+    .row {
+      padding-top: 20vw;
+      padding-bottom: 20vw;
+    }
+  }
+
+  // .interstellar {
+  //   background-color: black;
+  //   background-attachment: fixed;
+  //   background-position: center center;
+  //   background-repeat: no-repeat;
+  //   background-size: cover;
+  // }
+}

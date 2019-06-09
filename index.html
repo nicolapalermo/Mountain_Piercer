@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="it">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Mountain Piercer</title>
+    <meta name="Description" content="Produttore/DJ di musica elettronica.">
+    <meta name="theme-color" content="#000000"/>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css">
+    <link href="https://fonts.googleapis.com/css?family=Bree+Serif" rel="stylesheet">
+    <link href="css/animate.css" rel="stylesheet" type="text/css">
+    <link href="css/main.css" rel="stylesheet">
+    <link rel="shortcut icon" type="image/png" href="img/favicon.png"/>
+    <link rel="manifest" href="json/manifest.json">
+  </head>
+
+  <body class="">
+
+      <main>
+          <!-- Main slider -->
+          <div id="slider" class="carousel slide" data-ride="carousel" data-interval= "false">
+
+            <!-- Navbar -->
+            <header> 
+              <h1 class="hidden-h1">Mountain Piercer</h1>
+              <nav class="navbar-dark bg-dark fixed-bottom p-1">
+                <ul class="carousel-indicators animated bounceInUp delay-4s">
+                  <li class="noshop-button active" data-target="#slider" data-slide-to="0">
+                    <i class="fas fa-home"></i><br>Home
+                  </li>
+                  <li id="music-button" class="noshop-button" data-target="#slider" data-slide-to="1">
+                    <i class="fas fa-headphones"></i><br>Players
+                  </li>
+                  <li id="shop-button" data-target="#slider" data-slide-to="2">
+                    <i class="fas fa-shopping-cart"></i><br>Shop
+                  </li>
+                  <li class="noshop-button" data-target="#slider" data-slide-to="3">
+                      <i class="fas fa-envelope"></i><br>Contatti
+                  </li>
+                </ul>
+              </nav>
+            </header>
+            <!-- Navbar end -->
+
+
+            <!-- Intro Cover -->
+            <div class="basecover animated fadeOut">
+              <div class="cover animated fadeIn delay-1s"></div>
+            </div>
+            <!-- Intro Cover end -->
+
+
+            <!-- Wrapper for slides -->
+            <div class="carousel-inner">
+
+                <!-- Home -->
+                <div class="carousel-item active">
+                    <section class="home-cover">
+                      <div class="title animated flipInX delay-3s">Mountain Piercer</div> 
+                    </section>
+                    <svg class="svg" viewBox="0 0 100 100" preserveAspectRatio="none">
+                      <polygon fill="black" points="100,0 0,0 100,100"/>
+                    </svg>
+                    <section class="home-description">
+                      <div class="container">
+                        <div class="row d-flex align-items-center">
+                          <div data-scroll class="from-left animated col-md-6 logo">
+                          </div>
+                          <div data-scroll class="from-right animated col-md-6">
+                            <div class="description-text my-5">
+                              Produttore/DJ di musica elettronica. Vivo a Palermo.
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </section>
+                    <svg class="svg" viewBox="0 0 100 100" preserveAspectRatio="none">
+                      <polygon points="0,0 0,100 100,100"/>
+                    </svg>
+                    <section class="home-albums d-flex align-items-center">
+                      <div class="container">
+                        <div class="row d-flex align-items-start py-5">
+                          <div data-scroll class="col-md-4 my-5">
+                            <img src="img/disapperar.jpg" alt="Disappear">
+                            <h3 class="text-center my-2">DISAPPEAR</h3>
+                            <p>
+                              Disappear è l'album di debutto (pubblicato da Bandcamp), nel quale si possono notare influenze di artisti IDM come Jon Hopkins e Moderat.
+                            </p>
+                          </div>
+                          <div data-scroll class="col-md-4 my-5">
+                            <img src="img/algorithm.jpg" alt="Algorithm">
+                            <h3 class="text-center my-2">ALGORITHM</h3>
+                            <p>
+                              Algorithm è il primo EP rilasciato con l'etichetta Exabyte Records, dove il classico suono dei sintetizzatori si mischia con la nuova corrente di musica elettronica.
+                            </p>
+                          </div>
+                          <div data-scroll class="col-md-4 my-5">
+                            <img src="img/scene.JPG" alt="Scene">
+                            <h3 class="text-center my-2">SCENE</h3>
+                            <p>
+                              Scene è la storia di un viaggio. Un uomo, che uccise molti innocenti a causa della sua pazzia, fu condannato a viaggiare per sempre. Pensa constantemente che la sua ombra lo segua e voglia ucciderlo a causa dei suoi peccati, ma tutto ciò è solo nella sua testa.
+                              <br>
+                              &Egrave; un singolo che verrà incluso in un album futuro.
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                    </section>
+                    <div class="footer">
+                      <div class="footer-content">
+                        <div class="copy">
+                            Copyright 2019 &copy; Mountain Piercer
+                        </div>
+                        <div class="policy">
+                          <a target="_blank" href="privacy-cookie-policy.html">Privacy & Cookie Policy</a>
+                        </div>
+                        
+                      </div>
+                    </div>
+                </div>
+                <!-- Home end -->
+
+
+                <!-- Music -->
+                <div class="carousel-item">
+                  <div>
+                    <div class="container text-center mb-5">
+                      <h2 class="page-title text-center animated flipInX">Players</h2>
+                      <p class="text-center py-3">
+                        Mi trovi su questi canali
+                      </p>
+                      <div>
+                        <ul class="nav nav-pills row" id="playersTab-menu" role="tablist">
+
+                            <li class="nav-item col-4 col-md-1">
+                              <a class="nav-link active" id="spotify-tab" data-toggle="tab" href="#spotify" role="tab" aria-controls="spotify" aria-selected="true">
+                                <div class="logo spotify"></div>Spotify
+                              </a>
+                            </li>
+
+                            <li class="nav-item col-4 col-md-1">
+                              <a class="nav-link" id="soundcloud-tab" data-toggle="tab" href="#soundcloud" role="tab" aria-controls="soundcloud" aria-selected="false">
+                                <div class="logo soundcloud"></div>Soundcloud
+                              </a>
+                            </li>
+                            
+                            <li class="nav-item col-4 col-md-1">
+                              <a class="nav-link" id="beatport-tab" data-toggle="tab" href="#beatport" role="tab" aria-controls="beatport" aria-selected="false">
+                                <div class="logo beatport"></div>Beatport</a>
+                            </li>
+                            <li class="nav-item col-4 col-md-1">
+                              <a class="nav-link" id="itunes-tab" data-toggle="tab" href="#itunes" role="tab" aria-controls="itunes" aria-selected="false">
+                                <div class="logo itunes"></div>iTunes</a>
+                            </li>
+                            <li class="nav-item col-4 col-md-1">
+                              <a class="nav-link" id="deezer-tab" data-toggle="tab" href="#deezer" role="tab" aria-controls="deezer" aria-selected="false">
+                                <div class="logo deezer"></div>Deezer</a>
+                            </li>
+                            <li class="nav-item col-4 col-md-1">
+                              <a class="nav-link" id="bandcamp-tab" data-toggle="tab" href="#bandcamp" role="tab" aria-controls="bandcamp" aria-selected="false">
+                                <div class="logo bandcamp"></div>Bandcamp</a>
+                            </li>
+                            <li class="nav-item col-4 col-md-1">
+                              <a class="nav-link" id="youtube-tab" data-toggle="tab" href="#youtube" role="tab" aria-controls="youtube" aria-selected="false">
+                                <div class="logo youtube"></div>YouTube</a>
+                            </li>
+                          </ul>                          
+                          
+                          <div class="tab-content" id="playersTab">
+                            
+                            <div class="tab-pane fade show active" id="spotify" role="tabpanel" aria-labelledby="spotify-tab">
+                              <!-- iframe loaded from js -->
+                            </div>
+
+                            <div class="tab-pane fade" id="soundcloud" role="tabpanel" aria-labelledby="soundcloud-tab">
+                              <!-- iframe loaded from js -->
+                            </div>
+
+                            <div class="tab-pane fade" id="beatport" role="tabpanel" aria-labelledby="beatport-tab">
+                              <!-- iframe loaded from js -->
+                            </div>
+
+                            <div class="tab-pane fade" id="itunes" role="tabpanel" aria-labelledby="itunes-tab">
+                              <!-- iframe loaded from js -->             
+                            </div>
+
+                            <div class="tab-pane fade" id="deezer" role="tabpanel" aria-labelledby="deezer-tab">
+                              <!-- iframe loaded from js -->
+                            </div>
+
+                            <div class="tab-pane fade" id="bandcamp" role="tabpanel" aria-labelledby="bandcamp-tab">
+                              <!-- iframe loaded from js -->
+                            </div>
+
+                            <div class="tab-pane fade" id="youtube" role="tabpanel" aria-labelledby="youtube-tab">
+                              <!-- iframe loaded from js -->
+                            </div>
+
+                          </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="footer">
+                    <div class="footer-content">
+                      <div class="copy">
+                          Copyright 2019 &copy; Mountain Piercer
+                      </div>
+                      <div class="policy">
+                        <a target="_blank" href="privacy-cookie-policy.html">Privacy & Cookie Policy</a>
+                      </div>
+                      
+                    </div>
+                  </div>
+                </div>
+                <!-- Music end -->
+
+
+                <!-- Shop -->
+                <div class="carousel-item">
+
+                  <div class="shop-container">
+                    <!-- iframe loaded from js -->
+                  </div>
+
+                </div>
+                <!-- Shop end -->
+
+
+                <!-- Contact -->
+                <div class="carousel-item">
+                  <div>
+                    <div class="container text-center mb-5">
+                      <h2 class="page-title text-center animated flipInX">Contatti</h2>
+                      <div class="row">
+                        <div class="col-md-6">
+                          <ul class="nav justify-content-around social">
+
+                            <li class="nav-item">
+                              <a class="nav-link text-center" href="https://www.facebook.com/MountainPiercer/" target="_blank" rel="noreferrer"><i class="fab fa-facebook-square"></i><br>Facebook</a>
+                            </li>
+                            <li class="nav-item">
+                              <a class="nav-link text-center" href="https://www.instagram.com/explore/tags/mountainpiercer/" target="_blank" rel="noreferrer"><i class="fab fa-instagram"></i><br>Instagram</a>
+                            </li>
+                            <li class="nav-item">
+                              <a class="nav-link text-center" href="https://www.youtube.com/channel/UChaeR3VYJQ0WUDYPOJLE-nQ" target="_blank" rel="noreferrer"><i class="fab fa-youtube"></i><br>YouTube</a>
+                            </li>
+                          </ul>                              
+
+                          <div class="emails row">
+                            <div class="col-12">
+                              <h5>Email</h5>
+                              <p id="email1">email@gmail.com</p>
+                            </div>
+                            <div class="col-12">
+                              <p>Etichetta discografica:</p>
+                              <a id="etichetta" href="https://www.exabyterecords.com/" target="_blank" rel="noreferrer"><h5>Exabyte Records</h5></a>
+                            </div>
+                            <div class="col-12">
+                              <h5>Booking</h5>
+                              <p id="email2">email@gmail.com</p>
+                            </div>
+                            <div class="col-12">
+                              <h5>Management</h5>
+                              <p id="email3">email@gmail.com</p>
+                            </div>                            
+                          </div>
+
+                        </div>
+                        <div class="col-md-6">
+
+                          <form id="form" name="contact" method="POST" netlify-honeypot="bot-field" netlify>
+                            <p>Oppure contattami qui:</p>
+                            <div class="form-row">
+                              <div class="d-none">
+                                <label for="name">Don’t fill this out if you're human: 
+                                  <input class="form-control" name="bot-field" type="text" placeholder="Don’t fill this out if you're human:">  
+                                </label> 
+                              </div>
+                              <div class="form-group col-sm-12 col-md-6">
+                                <label for="name">Nome
+                                  <input class="form-control" name="name" type="text" placeholder="Inserisci il tuo nome">  
+                                </label> 
+                              </div>
+                              <div class="form-group col-sm-12 col-md-6">
+                                <label for="surname">Cognome
+                                  <input class="form-control" type="text" name="surname" placeholder="Inserisci il tuo cognome"> 
+                                </label>
+                              </div>
+
+                              <div class="form-group col-12">
+                                <label for="email">Email
+                                  <input type="email" name="email" class="form-control" aria-describedby="emailHelp" placeholder="Inserisci la tua email"/>
+                                </label>
+                              </div>
+
+                              <div class="form-group col-12">
+                                <label for="message">Messaggio
+                                  <textarea name="message" class="form-control" rows="3" placeholder="Inserisci il tuo messaggio"></textarea>
+                                </label>
+                              </div>
+
+                              <div class="col-12 d-flex justify-content-center" id="recaptcha" data-netlify-recaptcha></div>
+
+                              <div class="form-group col-12">
+                                <label for="privacy_ceck">
+                                  <input name="privacy_ceck" type="checkbox" id="privacy_ceck"> Autorizzo al trattamento dei dati come da <a class="text-white" target="_blank" href="privacy-cookie-policy.html">Privacy & Cookie Policy</a>
+                                </label>
+                              </div>
+                            </div>
+                            <button id="submit" type=”submit” class="btn" disabled>Invia</button>
+                            
+                          </form>
+
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <footer>
+                    <div class="footer">
+                      <div class="footer-content">
+                        <div class="copy">
+                            Copyright 2019 &copy; Mountain Piercer
+                        </div>
+                        <div class="policy">
+                          <a target="_blank" href="privacy-cookie-policy.html">Privacy & Cookie Policy</a>
+                        </div>
+                        
+                      </div>
+                    </div>
+                  </footer>
+                </div>
+                <!-- Contact end -->
+
+
+            </div> <!-- Wrapper for sliders end -->
+
+          </div> <!-- Main slider end -->
+
+         
+
+      </main>
+
+      <div id="banner" class="fixed-top bg-dark d-none">
+        <div class="container">
+            <div class="text-center text-white my-3">
+                Questo sito utilizza cookie. Consulta la <a href="#" class="text-white">Privacy & Cookie Policy</a> per maggiori informazioni. <br> <div id="banner-button" class="btn btn-light mt-2">Accetta</div>
+            </div>
+        </div>
+        
+      </div>
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="https://unpkg.com/scroll-out/dist/scroll-out.min.js"></script>
+    <script src="js/custom.js"></script>
+  </body>
+</html>
